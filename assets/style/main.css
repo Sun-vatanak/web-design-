@@ -48,3 +48,7 @@
     .fs-10{
             font-size: 0.35rem !important;
         }
+  /* h img */
+  .h-img{
+    height: 150px !important;
+  }

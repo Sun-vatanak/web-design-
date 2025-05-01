@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style/main.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Document</title>
     <style>
       .logo {
@@ -70,6 +70,38 @@
         display: flex;
         align-items: center;
       }
+      .hero{
+        height: 500px;
+      }
+
+      .hero-left{
+        height: 500px;
+      }
+      @media (max-width: 1200px) {
+        .hero {
+          width: 100%;
+          height: 500px!important;
+        }
+        .swiper-slide {
+          height: 600px!important;
+        }
+        .col-md-6  .hero-left{
+          width: 100%;
+          height: 500px !important;
+        }
+        
+      }
+      @media (max-width: 768px) {
+        .hero {
+          height: 750px !important;
+        }
+        .hero-left{
+          height: 250px !important;
+        }
+        
+        
+      }
+      
     </style>
   </head>
   <body>
@@ -95,7 +127,7 @@
                 <img class="logo" src="./assets/img/vatanak.png" />
               </div>
               <div
-                class="d-flex col-3 justify-content-center align-items-center"
+                class="d-flex col-3 d-none d-lg-block justify-content-center align-items-center"
               >
                 <div class="box-srech w-100">
                   <div class="d-flex w-100 border border-1 p-1 rounded-3">
@@ -130,11 +162,11 @@
                   class="contect w-100 d-flex align-items-center gap-3 justify-content-end"
                 >
                   <div
-                    class="border border-1 p-2 rounded border-primary rounded-2 text-primary px-3"
+                    class="border d-none d-md-block border-1 p-2 rounded border-primary rounded-2 text-primary px-3"
                   >
                     <i class="bi bi-chat-square-dots-fill"></i>
                   </div>
-                  <div class="">
+                  <div class="d-none d-lg-block">
                     <span class="fs-7">CALL US 24/7</span>
                     <a
                       href=""
@@ -166,47 +198,57 @@
       </nav>
     </header>
     <main>
-      <section style="height: 500px" class="container mt-3">
-        <div class="row g-3 w-100 h-100">
-          <div class="col-md-8 " data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
+      <section style="height: 500px" class="container hero  mt-3">
+        <div class="row g-3 w-100  h-100">
+          <div
+            class="col-md-6 col-lg-8"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="position-relative h-100">
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide  rounded rounded-3 overflow-hidden"> ">
+                  <div class="swiper-slide rounded rounded-3 overflow-hidden">
+                    ">
                     <img src="./assets/img/banner/image2.png" alt="" />
                     <div class="slide-content p-4">
-                      <div class="col-6 mt-5 text-start px-5">
-                        <p >PREMIUM FRESH NUTS</p>
-                        <h1 >Dried Fruits Best Healthy</h1>
-                        <span class="mt-5">Starting At</span>
-                        <h2 class="text-primary">$14.78</h2>
-                        <button class="btn btn-outline-primary">Shop now</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide  rounded rounded-3 overflow-hidden">
-                    <img src="./assets/img/banner/image5.png" alt="" />
-                    <div class="slide-content p-4">
-                      <div class="col-6 mt-5 text-start px-5">
+                      <div class="col-12  mb-lg-0   text-start px-5" >
                         <p>PREMIUM FRESH NUTS</p>
                         <h1>Dried Fruits Best Healthy</h1>
                         <span class="mt-5">Starting At</span>
                         <h2 class="text-primary">$14.78</h2>
-                        <button class="btn btn-outline-primary">Shop now</button>
+                        <button class="btn btn-outline-primary">
+                          Shop now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide rounded rounded-3 overflow-hidden">
+                    <img src="./assets/img/banner/image5.png" alt="" />
+                    <div class="slide-content  p-4">
+                      <div class="col-12 text-start px-5">
+                        <p>PREMIUM FRESH NUTS</p>
+                        <h1>Dried Fruits Best Healthy</h1>
+                        <span class="mt-5">Starting At</span>
+                        <h2 class="text-primary">$14.78</h2>
+                        <button class="btn btn-outline-primary">
+                          Shop now
+                        </button>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide rounded rounded-3 overflow-hidden">
                     <img src="./assets/img/banner/image6.png" alt="" />
-                    <div class="slide-content p-4">
-                      <div class="col-6 mt-5 text-start px-5">
+                    <div class="slide-content p-4 ">
+                      <div class="col-12  text-start px-5">
                         <p>PREMIUM FRESH NUTS</p>
                         <h1>Dried Fruits Best Healthy</h1>
                         <span class="mt-5">Starting At</span>
                         <h2 class="text-primary">$14.78</h2>
-                        <button class="btn btn-outline-primary">Shop now</button>
+                        <button class="btn btn-outline-primary">
+                          Shop now
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -217,13 +259,18 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 h-100">
-            <div class="row g-3 w-100 h-100">
-              <div class="col-12 " data-aos="fade-left"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="500"
-              data-aos-duration="500">
-                <div class="w-100 h-100 rounded rounded-3 overflow-hidden bg-img position-relative">
+          <div class="col-md-6   col-lg-4 h-100">
+            <div class="row g-3   h-100   position-relative">
+              <div
+                class="col-6 col-md-12 col-lg-12"
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500"
+              >
+                <div
+                  class="w-100 h-100 rounded rounded-3 overflow-hidden bg-img position-relative"
+                >
                   <img
                     src="./assets/img/banner/image5.png"
                     class="position-absolute"
@@ -232,28 +279,36 @@
                   <div class="position-absolute w-100 h-100">
                     <div class="col-12 fw-bold mt-3 text-start px-4">
                       <span class="text-warning fs-5">HOT THIS WEEK</span><br />
-                      <span class="text-warning fs-2 fw-bold">$ 15.55 Off</span><br />
-                      <span class="text-light fs-2 fw-bold">Spices & Flavours</span>
+                      <span class="text-warning fs-2 fw-bold">$ 15.55 Off</span
+                      ><br />
+                      <span class="text-light fs-2 fw-bold"
+                        >Spices & Flavours</span
+                      >
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 " data-aos="fade-left"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="500"
-              data-aos-duration="500">
-                <div class=" w-100 h-100 rounded rounded-3  overflow-hidden bg-img position-relative bg-black">
+              <div
+                class=" col-6 col-md-12 col-lg-12"
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500"
+              >
+                <div
+                  class="w-100 h-100 rounded rounded-3 overflow-hidden bg-img position-relative bg-black"
+                >
                   <img
                     src="./assets/img/banner/image6.png"
-                    class="position-absolute "
+                    class="position-absolute"
                     alt=""
                   />
                   <div class="position-absolute w-100 h-100">
-                    <br>
+                    <br />
                     <div class="col-12 mt-4 text-start text-dark px-4">
-                      <span class=" fs-5 fw-bold">HOT THIS WEEK</span><br />
+                      <span class="fs-5 fw-bold">HOT THIS WEEK</span><br />
                       <span class="fs-2 fw-bold">$ 15.55 Off</span><br />
-                      <span class=" fs-2 fw-bold">Spices & Flavours</span>
+                      <span class="fs-2 fw-bold">Spices & Flavours</span>
                     </div>
                   </div>
                 </div>
@@ -264,28 +319,42 @@
       </section>
       <!-- title poppuler -->
       <section class="mt-3">
-        <div class="container"  data-aos="fade-up"
-        data-aos-duration="1000">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
           <div class="title d-flex justify-content-between align-items-center">
             <h3>New products</h3>
             <div class="line">
-              <ul class="d-flex gap-3 justify-content-center align-items-center">
-                <li class="d-block text-decoration-none border border-2 border-dark border-start-0 border-end-0 border-top-0 ">
-                  <a href="" class="d-block text-dark text-decoration-none">Drinks</a>
+              <ul
+                class="d-flex gap-3 justify-content-center align-items-center"
+              >
+                <li
+                  class="d-block text-decoration-none border border-2 border-dark border-start-0 border-end-0 border-top-0"
+                >
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Drinks</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none ">
-                  <a href="" class="d-block text-dark text-decoration-none">Dinner</a>
+                <li class="d-block text-decoration-none">
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Dinner</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none ">
-                  <a href="" class="d-block text-dark text-decoration-none">Lunch</a>
+                <li class="d-block text-decoration-none">
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Lunch</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none ">
-                  <a href="" class="d-block text-dark text-decoration-none">Breakfast</a>
+                <li class="d-block text-decoration-none">
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Breakfast</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none   border border-2 px-2 border-dark border-bottom-0 border-end-0 border-top-0 ">
-                  <a href="" class="d-block text-dark text-decoration-none ">View All</a>
+                <li
+                  class="d-block text-decoration-none border border-2 px-2 border-dark border-bottom-0 border-end-0 border-top-0"
+                >
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >View All</a
+                  >
                 </li>
-                
               </ul>
             </div>
           </div>
@@ -296,82 +365,146 @@
         <div class="container mt-3">
           <div class="menu">
             <div class="row g-3">
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -381,27 +514,47 @@
         </div>
       </section>
       <section>
-        <div class="container mt-3 ">
+        <div class="container mt-3">
           <div class="row g-3">
-            <div class="col-md-6 " data-aos="fade-up"
-            data-aos-duration="1000" style="height: 220px;">
-              <div class="contain w-100 h-100  position-relative">
-                <img src="./assets/img/banner/image6.png"  alt="" class="w-100 h-100 rounded rounded-3 object-fit-cover position-absolute " />
-                <div class="detail-dis col-12  text-start text-dark px-4  w-100 h-100  position-absolute  mt-5 ">
-                    <span class=" fs-5 ">Chocolate Cookies</span><br />
-                    <span class="fs-2 fw-bold">Best Sweets In Town</span><br />
-                    <span class=" fs-2 text-warning">FROM 20% OFF</span>
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              style="height: 220px"
+            >
+              <div class="contain w-100 h-100 position-relative">
+                <img
+                  src="./assets/img/banner/image6.png"
+                  alt=""
+                  class="w-100 h-100 rounded rounded-3 object-fit-cover position-absolute"
+                />
+                <div
+                  class="detail-dis col-12 text-start text-dark px-4 w-100 h-100 position-absolute mt-5"
+                >
+                  <span class="fs-5">Chocolate Cookies</span><br />
+                  <span class="fs-2 fw-bold">Best Sweets In Town</span><br />
+                  <span class="fs-2 text-warning">FROM 20% OFF</span>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 " data-aos="fade-up"
-            data-aos-duration="1000" style="height: 220px;">
-              <div class="contain w-100 h-100  position-relative">
-                <img src="./assets/img/banner/image5.png"  alt="" class="w-100 h-100 rounded rounded-3 object-fit-cover position-absolute " />
-                <div class="detail-dis col-12  text-start text-dark px-4  w-100 h-100  position-absolute  mt-5 ">
-                    <span class=" fs-5 ">Chocolate Cookies</span><br />
-                    <span class="fs-2 fw-bold">Best Sweets In Town</span><br />
-                    <span class=" fs-2 text-warning">FROM 20% OFF</span>
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              style="height: 220px"
+            >
+              <div class="contain w-100 h-100 position-relative">
+                <img
+                  src="./assets/img/banner/image5.png"
+                  alt=""
+                  class="w-100 h-100 rounded rounded-3 object-fit-cover position-absolute"
+                />
+                <div
+                  class="detail-dis col-12 text-start text-dark px-4 w-100 h-100 position-absolute mt-5"
+                >
+                  <span class="fs-5">Chocolate Cookies</span><br />
+                  <span class="fs-2 fw-bold">Best Sweets In Town</span><br />
+                  <span class="fs-2 text-warning">FROM 20% OFF</span>
                 </div>
               </div>
             </div>
@@ -409,29 +562,43 @@
         </div>
       </section>
       <!-- title sele -->
-      <section class="mt-3 ">
-        <div class="container"  data-aos="fade-up"
-        data-aos-duration="1000">
+      <section class="mt-3">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
           <div class="title d-flex justify-content-between align-items-center">
             <h3>Sales</h3>
             <div class="line">
-              <ul class="d-flex gap-3 justify-content-center align-items-center">
-                <li class="d-block text-decoration-none border border-2 border-dark border-start-0 border-end-0 border-top-0 ">
-                  <a href="" class="d-block text-dark text-decoration-none">Drinks</a>
+              <ul
+                class="d-flex gap-3 justify-content-center align-items-center"
+              >
+                <li
+                  class="d-block text-decoration-none border border-2 border-dark border-start-0 border-end-0 border-top-0"
+                >
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Drinks</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none ">
-                  <a href="" class="d-block text-dark text-decoration-none">Dinner</a>
+                <li class="d-block text-decoration-none">
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Dinner</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none ">
-                  <a href="" class="d-block text-dark text-decoration-none">Lunch</a>
+                <li class="d-block text-decoration-none">
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Lunch</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none ">
-                  <a href="" class="d-block text-dark text-decoration-none">Breakfast</a>
+                <li class="d-block text-decoration-none">
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >Breakfast</a
+                  >
                 </li>
-                <li class="d-block text-decoration-none   border border-2 px-2 border-dark border-bottom-0 border-end-0 border-top-0 ">
-                  <a href="" class="d-block text-dark text-decoration-none ">View All</a>
+                <li
+                  class="d-block text-decoration-none border border-2 px-2 border-dark border-bottom-0 border-end-0 border-top-0"
+                >
+                  <a href="" class="d-block text-dark text-decoration-none"
+                    >View All</a
+                  >
                 </li>
-                
               </ul>
             </div>
           </div>
@@ -442,82 +609,146 @@
         <div class="container mt-3">
           <div class="menu">
             <div class="row g-3">
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
-              data-aos-duration="1000">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div class="card p-3">
                   <div class="card-header border-0 bg-white p-0">
-                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                    <img
+                      src="./assets/img/banner/image2.png"
+                      class="card-img-top w-100 h-100"
+                      alt="..."
+                    />
                   </div>
                   <div class="card-body border-0 p-0 py-2">
                     <div class="">
-                      <span>Drink</span> <br>
-                      <span class="fs-5">Anachak Bok Lahong II (Wat Phnom)</span> <br>
-                      <span class="text-primary fs-5  fw-bold">$ 15.55</span> <span>/ Free Delivery</span>
-
+                      <span>Drink</span> <br />
+                      <span class="fs-5"
+                        >Anachak Bok Lahong II (Wat Phnom)</span
+                      >
+                      <br />
+                      <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                      <span>/ Free Delivery</span>
                     </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                      <button class="btn btn-outline-primary"> ADD TO CART  <i class="bi bi-cart-fill"></i> </button>
-                      <button class="btn btn-outline-primary">  <i class="bi bi-heart-fill"></i></button>
+                    <div
+                      class="mt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <button class="btn btn-outline-primary">
+                        ADD TO CART <i class="bi bi-cart-fill"></i>
+                      </button>
+                      <button class="btn btn-outline-primary">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -527,28 +758,314 @@
         </div>
       </section>
       <!-- conatin Featured onsle and more -->
-       <section class="mt-3">
+      <section class="mt-3">
         <div class="container">
           <div class="row">
-            <div class="col-4 ">
-              <div class="title d-flex justify-content-between">
-                <span>Featured</span>
-                <div class="d-block gap-3">
-                  <button class="btn btn-outline-primary">go </button>
-                  <button class="btn btn-outline-primary">back </button>
-
+            <!-- Featured -->
+            <div
+              class="col-md-12 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="title d-flex justify-content-between mt-3 mt-lg-0">
+                <span class="fs-5">Featured</span>
+                <div class="d-flex gap-3">
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
                 </div>
               </div>
               <div class="body-contain mt-3">
                 <div class="row g-3">
                   <div class="col-12">
-                    <div class=" d-flex gap-3 border border-1  rounded-3 p-2">
-                      <div class="card-header  border-0 bg-white p-0">
-                        <img src="./assets/img/banner/image2.png" class="card-img-top rounded rounded-3" alt="..."  style="width: 120px;"/>
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title">Title</h5>
-                        <p class="card-text">Content</p>
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- On Sales-->
+            <div
+              class="col-md-12 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="title d-flex justify-content-between mt-3 mt-lg-0">
+                <span class="fw-bold fs-5">On Sales</span>
+                <div class="d-flex gap-3">
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="body-contain mt-3">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popular-->
+            <div
+              class="col-md-12 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="title d-flex justify-content-between mt-3 mt-lg-0">
+                <span class="fs-4">Popular</span>
+                <div class="d-flex gap-3">
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="body-contain mt-3">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex gap-3 border border-1 rounded-3 p-2">
+                      <div class="card-header border-0 bg-white p-0">
+                        <img
+                          src="./assets/img/banner/image2.png"
+                          class="card-img-top h-100 rounded rounded-3"
+                          alt="..."
+                          style="width: 120px"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tealive (St. 310)</h5>
+                        <span class="text-primary fs-5 fw-bold">$ 15.55</span>
+                        <span>/ Free Delivery</span>
+                        <div
+                          class="mt-2 d-flex justify-content-between align-items-center"
+                        >
+                          <button class="btn btn-outline-primary">
+                            ADD TO CART <i class="bi bi-cart-fill"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="bi bi-heart-fill"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -557,7 +1074,81 @@
             </div>
           </div>
         </div>
-       </section>
+      </section>
+      <!-- Store -->
+      <section class="mt-3">
+        <div class="container">
+          <div class="title" data-aos="fade-up" data-aos-duration="1000">
+            <h3>Shop by store</h3>
+          </div>
+          <div class="mt-3">
+            <div class="row">
+               <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card p-3">
+                  <div class="card-header border-0 bg-white p-0">
+                    <img
+                      src="./assets/img/banner/image5.png"
+                      class="card-img-top w-100 h-100 object-fit-cover" 
+                      alt="..."
+                    />
+                  <div class="card-body p-0 mt-3  ">
+                    <h5 class="card-title">Menath Banh Chhev (Central Mark)</h5>
+                    <div class=" d-flex  p-0 align-content-center gap-1 text-center " ><i class="bi bi-alarm-fill text-primary"></i>  <p class="ms-2">1-2 h</p><p>$ 0.50 Delivery Charge</p></div>
+                  </div>
+                </div>
+              </div>    
+               </div>
+               <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card p-3">
+                  <div class="card-header border-0 bg-white p-0">
+                    <img
+                      src="./assets/img/banner/image5.png"
+                      class="card-img-top w-100 h-100 object-fit-cover" 
+                      alt="..."
+                    />
+                  <div class="card-body p-0 mt-3  ">
+                    <h5 class="card-title">Menath Banh Chhev (Central Mark)</h5>
+                    <div class=" d-flex  p-0 align-content-center gap-1 text-center " ><i class="bi bi-alarm-fill text-primary"></i>  <p class="ms-2">1-2 h</p><p>$ 0.50 Delivery Charge</p></div>
+                  </div>
+                </div>
+              </div>    
+               </div>
+               <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000"> 
+                <div class="card p-3">
+                  <div class="card-header border-0 bg-white p-0">
+                    <img
+                      src="./assets/img/banner/image5.png"
+                      class="card-img-top w-100 h-100 object-fit-cover" 
+                      alt="..."
+                    />
+                  <div class="card-body p-0 mt-3  ">
+                    <h5 class="card-title">Menath Banh Chhev (Central Mark)</h5>
+                    <div class=" d-flex  p-0 align-content-center gap-1 text-center " ><i class="bi bi-alarm-fill text-primary"></i>  <p class="ms-2">1-2 h</p><p>$ 0.50 Delivery Charge</p></div>
+                  </div>
+                </div>
+              </div>    
+               </div>
+               <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card p-3">
+                  <div class="card-header border-0 bg-white p-0">
+                    <img
+                      src="./assets/img/banner/image5.png"
+                      class="card-img-top w-100 h-100 object-fit-cover" 
+                      alt="..."
+                    />
+                  <div class="card-body p-0 mt-3  ">
+                    <h5 class="card-title">Menath Banh Chhev (Central Mark)</h5>
+                    <div class=" d-flex  p-0 align-content-center gap-1 text-center " ><i class="bi bi-alarm-fill text-primary"></i>  <p class="ms-2">1-2 h</p><p>$ 0.50 Delivery Charge</p></div>
+                  </div>
+                </div>
+              </div>    
+               </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <script src="./assets/script/bootstrap.bundle.min.js"></script>
@@ -567,7 +1158,7 @@
       AOS.init();
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
-        loop:true,
+        loop: true,
         centeredSlides: true,
         autoplay: {
           delay: 3000,
