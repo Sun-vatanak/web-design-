@@ -3,23 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/css/tom-select.css"
-      rel="stylesheet"
-    />
+   
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
-  </head>
-  <body>
     <style>
       .logo {
         flex-shrink: 0;
@@ -40,6 +37,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
       }
 
       .swiper-slide img {
@@ -47,8 +45,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
-      .bg-img img{
+
+      .bg-img img {
         display: block;
         width: 100%;
         height: 100%;
@@ -59,14 +61,18 @@
         margin-left: auto;
         margin-right: auto;
       }
-   
-      /* .bg-img-1 {
-            background-image: url('./assets/img/banner/image.png');
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-        } */
+
+      .slide-content {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
     </style>
+  </head>
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-white">
         <div class="container p-3">
@@ -160,67 +166,50 @@
       </nav>
     </header>
     <main>
-      <section style="height: 500px " class="container mt-3 ">
-        <div class="row g-3 w-100 h-100 ">
-          <div class="col-md-8  ">
-            <div class="position-relative   h-100 ">
-              <div class="swiper mySwiper " >
-                <div class="swiper-wrapper rounded rounded-3 overflow-hidden">
-                  <div class="swiper-slide bg-img-1 position-relative">
-                    <img
-                      src="./assets/img/banner/image2.png"
-                      class="position-absolute"
-                      alt=""
-                    />
-                    <div class="position-absolute  p-4 w-100 h-100">
-                      <br><br>
+      <section style="height: 500px" class="container mt-3">
+        <div class="row g-3 w-100 h-100">
+          <div class="col-md-8 " data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <div class="position-relative h-100">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide  rounded rounded-3 overflow-hidden"> ">
+                    <img src="./assets/img/banner/image2.png" alt="" />
+                    <div class="slide-content p-4">
                       <div class="col-6 mt-5 text-start px-5">
-                        <p>PREMIUM FRESH NUTS</p>
-                        <h1>Dried Fruits Best Healthy</h1>
-                        <span class="mt-5">Starting At</span>
-                        <h2 class="text-primary">$14.78</h2>
-                        <button class="btn btn-outline-primary"> Shop now</button>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  <div class="swiper-slide bg-img-1 position-relative">
-                    <img
-                      src="./assets/img/banner/image3.png"
-                      class="position-absolute"
-                      alt=""
-                    />
-                    <div class="position-absolute  p-4 w-100 h-100">
-                      <br><br>
-                      <div class="col-6 mt-5 text-start px-5">
-                        <p>PREMIUM FRESH NUTS</p>
-                        <h1>Dried Fruits Best Healthy</h1>
-                        <span class="mt-5">Starting At</span>
-                        <h2 class="text-primary">$14.78</h2>
-                        <button class="btn btn-outline-primary"> Shop now</button>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  <div class="swiper-slide bg-img-1 position-relative">
-                    <img
-                      src="./assets/img/banner/image4.png"
-                      class="position-absolute"
-                      alt=""
-                    />
-                    <div class="position-absolute  p-4 w-100 h-100">
-                      <br><br>
-                      <div class="col-6 mt-5 text-start px-5">
-                        <p>PREMIUM FRESH NUTS</p>
+                        <p >PREMIUM FRESH NUTS</p>
                         <h1 >Dried Fruits Best Healthy</h1>
                         <span class="mt-5">Starting At</span>
                         <h2 class="text-primary">$14.78</h2>
-                        <button class="btn btn-outline-primary"> Shop now</button>
+                        <button class="btn btn-outline-primary">Shop now</button>
                       </div>
-                      
                     </div>
                   </div>
-                
+                  <div class="swiper-slide  rounded rounded-3 overflow-hidden">
+                    <img src="./assets/img/banner/image5.png" alt="" />
+                    <div class="slide-content p-4">
+                      <div class="col-6 mt-5 text-start px-5">
+                        <p>PREMIUM FRESH NUTS</p>
+                        <h1>Dried Fruits Best Healthy</h1>
+                        <span class="mt-5">Starting At</span>
+                        <h2 class="text-primary">$14.78</h2>
+                        <button class="btn btn-outline-primary">Shop now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide rounded rounded-3 overflow-hidden">
+                    <img src="./assets/img/banner/image6.png" alt="" />
+                    <div class="slide-content p-4">
+                      <div class="col-6 mt-5 text-start px-5">
+                        <p>PREMIUM FRESH NUTS</p>
+                        <h1>Dried Fruits Best Healthy</h1>
+                        <span class="mt-5">Starting At</span>
+                        <h2 class="text-primary">$14.78</h2>
+                        <button class="btn btn-outline-primary">Shop now</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-button-next text-warning"></div>
                 <div class="swiper-button-prev text-warning"></div>
@@ -228,44 +217,94 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 h-100 ">
+          <div class="col-md-4 h-100">
             <div class="row g-3 w-100 h-100">
-              <div class="col-12">
-                <div class=" w-100 h-100 rounded rounded-3 overflow-hidden bg-img position-relative">
+              <div class="col-12 " data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="500">
+                <div class="w-100 h-100 rounded rounded-3 overflow-hidden bg-img position-relative">
                   <img
-                    src="./assets/img/banner/image4.png"
-                    class="position-absolute "
-                    alt=""
-                  />
-                  <div class="position-absolute  w-100 h-100">
-                    <div class="col-12 mt-3  text-start  px-4">
-                      <span class="text-warning fs-5"> HOT THIS WEEK</span><br>
-                      <span class="text-warning fs-2 fw-bold">$ 15.55 Off</span><br>
-                      <span class="text-light fs-2 fw-bold">Spices & Flavours</span>
-                     
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="col-12  ">
-                <div class=" w-100 h-100 rounded rounded-3 overflow-hidden bg-img position-relative  bg-black">
-                  <img
-                    src="./assets/img/banner/image4.png"
+                    src="./assets/img/banner/image5.png"
                     class="position-absolute"
                     alt=""
                   />
-                  <div class="position-absolute  w-100 h-100">
-                    <div class="col-12 mt-3  text-start  px-4">
-                      <span class="text-warning fs-5"> HOT THIS WEEK</span><br>
-                      <span class="text-warning fs-2 fw-bold">$ 15.55 Off</span><br>
+                  <div class="position-absolute w-100 h-100">
+                    <div class="col-12 fw-bold mt-3 text-start px-4">
+                      <span class="text-warning fs-5">HOT THIS WEEK</span><br />
+                      <span class="text-warning fs-2 fw-bold">$ 15.55 Off</span><br />
                       <span class="text-light fs-2 fw-bold">Spices & Flavours</span>
-                     
                     </div>
-                    
                   </div>
                 </div>
-              </div>     
+              </div>
+              <div class="col-12 " data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="500">
+                <div class=" w-100 h-100 rounded rounded-3  overflow-hidden bg-img position-relative bg-black">
+                  <img
+                    src="./assets/img/banner/image6.png"
+                    class="position-absolute "
+                    alt=""
+                  />
+                  <div class="position-absolute w-100 h-100">
+                    <br>
+                    <div class="col-12 mt-4 text-start text-dark px-4">
+                      <span class=" fs-5 fw-bold">HOT THIS WEEK</span><br />
+                      <span class="fs-2 fw-bold">$ 15.55 Off</span><br />
+                      <span class=" fs-2 fw-bold">Spices & Flavours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-3">
+        <div class="container">
+          <div class="title d-flex justify-content-between align-items-center">
+            <h3>New products</h3>
+            <div class="line">
+              <ul class="d-flex gap-3 justify-content-center align-items-center">
+                <li class="d-block text-decoration-none border border-2 border-dark border-start-0 border-end-0 border-top-0 ">
+                  <a href="" class="d-block text-dark text-decoration-none">Drinks</a>
+                </li>
+                <li class="d-block text-decoration-none ">
+                  <a href="" class="d-block text-dark text-decoration-none">Dinner</a>
+                </li>
+                <li class="d-block text-decoration-none ">
+                  <a href="" class="d-block text-dark text-decoration-none">Lunch</a>
+                </li>
+                <li class="d-block text-decoration-none ">
+                  <a href="" class="d-block text-dark text-decoration-none">Breakfast</a>
+                </li>
+                <li class="d-block text-decoration-none   border border-2 px-2 border-dark border-bottom-0 border-end-0 border-top-0 ">
+                  <a href="" class="d-block text-dark text-decoration-none ">View All</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mt-3">
+          <div class="menu">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 " data-aos="fade-up"
+              data-aos-duration="1000">
+                <div class="card p-3">
+                  <div class="card-header border-0 bg-white p-0">
+                    <img src="./assets/img/banner/image2.png" class="card-img-top w-100 h-100" alt="..." />
+                  </div>
+                  <div class="card-body border-0">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">Content</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -274,12 +313,17 @@
 
     <script src="./assets/script/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init();
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-
         spaceBetween: 30,
-        loop: true,
+        loop:true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
