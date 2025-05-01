@@ -1,0 +1,59 @@
+$theme-colors: (
+  'primary': #4CAF50,   // green
+  'secondary': #81C784, // light green
+  'white': #FFFFFF,
+  'warning': #FFB300,   // orange
+  'light': #F5F5F5,     // light gray
+  'dark': #616161,      // dark gray
+  'info': #42A5F5,      // blue
+  'danger': #8D6E63,    // brown
+  'success': #66BB6A,   // medium green
+  'muted': #9E9E9E,     // medium gray
+  'background': #FAFAFA,// very light gray
+  'border': #E0E0E0,    // light gray
+  'text': #212121       // dark gray
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// General button styles
+.btn {
+  border-radius: 6px !important;
+  &:focus, &:active {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+  }
+}
+
+// Custom button colors
+@each $name, $color in map-remove($theme-colors, 'white', 'light', 'dark', 'muted', 'background', 'border', 'text') {
+  .btn-#{$name} {
+    background-color: $color !important;
+    color: map-get($theme-colors, 'white') !important;
+    &:hover, &:focus, &:active {
+      background-color: darken($color, 10%) !important;
+      color: map-get($theme-colors, 'white') !important;
+    }
+  }
+}
+
+// Special case for warning button text color
+.btn-warning {
+  color: map-get($theme-colors, 'dark') !important;
+  &:hover, &:focus, &:active {
+    color: map-get($theme-colors, 'dark') !important;
+  }
+}
+
+// Additional customization for outline buttons
+@each $name, $color in map-remove($theme-colors, 'white', 'light', 'dark', 'muted', 'background', 'border', 'text') {
+  .btn-outline-#{$name} {
+    color: $color !important;
+    border-color: $color !important;
+    &:hover {
+      background-color: $color !important;
+      color: map-get($theme-colors, 'white') !important;
+    }
+  }
+}
