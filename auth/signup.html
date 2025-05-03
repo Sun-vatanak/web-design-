@@ -1,17 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/style/main.css">
-    <link rel="stylesheet" href="../assets/style/bootstrap.min.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style/main.css" />
+    <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
+    <title>Sign Up Screen</title>
+
+    <style>
+        body {
+            margin: auto;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        span {
+            width: 80px;
+            height: 1px;
+            background-color: #b9b5b5;
+        }
+
+        .btn-signup {
+            width: 100%;
+            height: 50px;
+            border-radius: 8px;
+            border: 1px solid #b9b5b5;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <div class="frame g-5 row p-4 rounded rounded-3 mt-5 justify-content-center align-content-center"
+        style="background-color: antiquewhite;">
+        <div class="for-form col-md-6 g-5">
+            <h1 class="justify-content-center align-content-center d-flex">Sign Up</h1>
+            <h5 class="fs-6 text-dark">Enter detail to create your Account.</h5>
+
+            <button class="btn-signup btn bg-light-subtle d-flex justify-content-center align-items-center gap-2">
+                <img src="../assets/logo/google.png" width="25" alt="">
+                <p class="fs-6 mt-3">Sign up With Google</p>
+            </button>
+
+            <div class="driver d-flex justify-content-between align-items-center">
+                <span></span>
+                <p class="fs-7 mt-3 text-light-emphasis">Or Sign up with email</p>
+                <span></span>
+            </div>
+            <form action="/signup" method="post">
+                <div class="form-group gap-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="first-name">First Name</label>
+                        </div>
+                        <div class="col-6">
+                            <label for="last-name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2">
+                        <input type="text" name="first-name" id="first-name" class="form-control" required />
+                        <input type="text" name="last-name" id="last-name" class="form-control" required />
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="form-control" required />
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" required />
+
+                    <!-- <label for="remember-me">Remember Me</label> -->
+                    <div class="d-flex justify-content-start align-content-center mt-2 gap-2">
+                        <input type="checkbox" name="remember-me" id="remember-me" class="form-check-input" />
+                        <label for="remember-me" class="form-check-label">Remember me</label>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mt-3 gap-2">
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                </div>
+                <div class="d-flex justify-content-lg-start align-items-center mt-3 g-5">
+                    <p class="fs-6">Already have an account? <a href="/login" class="text-decoration-none fs-6">Login
+                            now</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="for-image d-flex justify-content-center align-items-center col-md-6">
+            <img src="../assets/img/board/tl.webp" width="300px" class="img-fluid" alt="image" />
+        </div>
+    </div>
 </body>
 <script src="../assets/script/bootstrap.bundle.min.js"></script>
-<script>
+<script></script>
 
-</script>
 </html>
