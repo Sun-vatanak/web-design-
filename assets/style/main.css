@@ -14,7 +14,9 @@
 body{
   background-color: #eef3f6 !important;
 }
-
+.bg-color-default{
+  background-color: #eef3f6 !important;
+}
 /*  custom placeholder */
 .form-control::placeholder {
   color: var(--border-color);

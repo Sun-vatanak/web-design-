@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/style/main.css">
+
     <link rel="stylesheet" href="../assets/style/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <title>OTP</title>
+
+    <style>
+        body {
+            margin: auto;
+            font-family: Arial, sans-serif;
+            background-color: #ececec;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .frame {
+            padding-bottom: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 14px;
+            color: #777272;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="frame g-5 row rounded rounded-3 mt-6 justify-content-center align-content-center"
+        style="background-color: antiquewhite; width: 1000px;">
+        <div class="for-form col-md-6">
+            <h1>ប្តូរលេខសម្ងាត់</h1>
+            <span>
+                <p>your previous password has been restated. Please set a new password for your account.</p>
+            </span>
+            <form action="/otp" method="post">
+                <div class="form-group gap-2">
+                    <label class="form-label" for="otp">បង្កើតពាក្យសម្ងាត់</label>
+                    <div class="input">
+                        <input type="password" class="form-control" id="otp" name="otp" placeholder="fJjsaiofuqr@UNH21"
+                            required />
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+
+                    <label class="form-label mt-3" for="otp">បញ្ចូលពាក្យសម្ងាត់</label>
+                    <div class="input col-12 d-flex justify-content-between align-items-center">
+                        <input type="password" class="form-control" id="otp" name="otp" placeholder="fJjsaiofuqr@UNH21"
+                            required />
+                        <img class="icon-eye" height="25" src="https://img.icons8.com/ios/50/invisible.png"
+                            alt="invisible" />
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <button type="submit" class="btn btn-primary w-100">ប្តូរលេខសម្ងាត់</button>
+                </div>
+            </form>
+        </div>
+        <div class="for-image d-flex justify-content-center align-items-center col-md-6 rounded rounded-3"
+            style="background-color: aquamarine;">
+            <img src="../assets/img/board/tl.webp" width="300px" class="img-fluid" alt="image" />
+        </div>
+    </div>
 </body>
 <script src="../assets/script/bootstrap.bundle.min.js"></script>
 <script>
 
 </script>
+
 </html>
