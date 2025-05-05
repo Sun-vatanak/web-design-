@@ -21,101 +21,63 @@
     </style>
 </head>
 <body>
-    <header>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-white">
-              <div class="container p-3">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarScroll"
-                  aria-controls="navbarScroll"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="w-100">
-                  <div
-                    class="w-100 row align-items-center d-flex justify-content-between"
-                  >
-                    <a href="../index.html" class="bg-body d-block col-3">
-                      <img class="logo" src="./assets/img/vatanak.png" />
-                    </a>
-                    <div
-                      class="d-flex col-3 d-none d-lg-block justify-content-center align-items-center"
-                    >
-                      <div class="box-srech w-100">
-                        <div class="d-flex w-100 border border-1 p-1 rounded-3">
-                          <div class="form-group g-1 row w-100">
-                            <div class="form-group col-6">
-                              <select
-                                class="form-select border-0"
-                                aria-label="Default select example"
-                              >
-                                <option selected>All Category</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container p-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="w-100">
+                <div class="w-100 row align-items-center d-flex justify-content-between">
+                    <div class="bg-body col-3">
+                        <img class="logo" src="./assets/img/vatanak.png" />
+                    </div>
+                    <div class="d-flex col-3 d-none d-lg-block justify-content-center align-items-center">
+                        <div class="box-srech w-100">
+                            <div class="d-flex w-100 border border-1 p-1 rounded-3">
+                                <div class="form-group g-1 row w-100">
+                                    <div class="form-group col-6">
+                                        <select class="form-select border-0" aria-label="Default select example">
+                                            <option selected>All Category</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 pe-2 d-flex align-items-center">
+                                        <div class="div">|</div>
+                                        <input type="text" class="form-control border-0" id="exampleFormControlInput1" placeholder="Search" />
+                                        <i class="bi bi-search"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6 pe-2 d-flex align-items-center">
-                              <div class="div">|</div>
-                              <input
-                                type="text"
-                                class="form-control border-0"
-                                id="exampleFormControlInput1"
-                                placeholder="Search"
-                              />
-                              <i class="bi bi-search"></i>
-                            </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
                     <div class="col-5 d-flex">
-                      <div
-                        class="contect w-100 d-flex align-items-center gap-3 justify-content-end"
-                      >
-                        <a
-                          class="border d-block d-none d-md-block btn btn-outline-primary"
-                          href=""
-                        >
-                          <i class="bi bi-chat-square-dots-fill"></i>
-                        </a>
-                        <div class="d-none d-lg-block">
-                          <span class="fs-7">CALL US 24/7</span>
-                          <a
-                            href=""
-                            class="d-block fs-6 text-dark text-decoration-none"
-                            >+855 - 70 80 90 31</a
-                          >
+                        <div class="contect w-100 d-flex align-items-center gap-3 justify-content-end">
+                            <a class="border d-block d-none d-md-block btn btn-outline-primary" href="">
+                                <i class="bi bi-chat-square-dots-fill"></i>
+                            </a>
+                            <div class="d-none d-lg-block">
+                                <span class="fs-7">CALL US 24/7</span>
+                                <a href="" class="d-block fs-6 text-dark text-decoration-none">+855 - 70 80 90 31</a>
+                            </div>
+                            <a class="border d-block d-none d-md-block btn btn-outline-primary">
+                                <i class="bi bi-person-fill"></i>
+                            </a>
+                            <a class="border d-block d-none d-md-block btn btn-outline-primary">
+                                <i class="bi bi-heart-fill"></i>
+                            </a>
+                            <a class="border d-block d-none d-md-block btn btn-outline-primary position-relative" id="cart-icon">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
                         </div>
-                        <a
-                          class="border d-block d-none d-md-block btn btn-outline-primary"
-                        >
-                          <i class="bi bi-person-fill"></i>
-                        </a>
-      
-                        <a
-                          class="border d-block d-none d-md-block btn btn-outline-primary"
-                        >
-                          <i class="bi bi-heart-fill"></i>
-                        </a>
-                        <a
-                          class="border d-block d-none d-md-block btn btn-outline-primary"
-                        >
-                          <i class="bi bi-cart-fill"></i>
-                        </a>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </nav>
-          </header>
-    </header>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <main>
         <div class="container my-5">
@@ -133,7 +95,7 @@
                         <div class="col-12 bg-white w-100 p-3 rounded rounded-3">
                             <h2 class="mb-4">Order Details</h2>
                         
-                        <div id="order-items-container">
+                        <div id="order-items-container" style="height: 300px ; overflow-y: auto;">
                           
                         </div>
                         <div class="order-summary bg-white">
@@ -165,18 +127,17 @@
                                 <input class="form-check-input ms-0 " type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
                                 <label class="form-check-label" for="creditCard">
                                 <img src="../assets/img/user/image2.png" style="height: 40px;" alt="">
-
                                    <span>ទូរទាត់ប្រាក់ផ្ទាល់</span> 
                                 </label>                
                         </div>
-                        <div class="form-check btn mb-3 align-items-center  border border-1 p-3 d-flex gap-3 border-primary rounded-3 " data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                        <div class="form-check btn mb-3 align-items-center  border border-1 p-3 d-flex gap-3 border-primary rounded-3 " >
                                 <input class="form-check-input ms-0 " type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
                                 <label class="form-check-label" for="creditCard">
                                 <img src="../assets/img/user/image.png" style="height: 40px;" alt=""> <span>ទូរទាត់ប្រាក់តាមរយះ KHQR Mobile</span>
                                 </label>                
                         </div>
                         <p>ខ្ញុំយល់ព្រមលើលក្ខខណ្ឌសេវា និងយល់ដឹងថាក្រោយបញ្ជាទិញមិនអាចត្រឡប់វិញបានទេ។</p>
-                        <button type="submit" class="btn btn-primary w-100" >Place Order</button>
+                        <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  >ធ្វើការបញ្ជាទិញ</button>
 
 
                     </div>    
@@ -299,99 +260,302 @@
        
 
   
+     
+
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">ស្កេនទីនេះដើម្បីបង់ប្រាក់</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modal-detail" ></button>
         </div>
-        <div class="modal-body">
-          ...
+        <div class="modal-body border-0">
+             <img src="../assets/img/board/QR.jpg"  class="img-fluid object-fit-cover w-100 " style="height: 250px;" alt="">
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+        <div class="p-2"  id="price-product">
+          <h4>ឈ្មោះម្ចាស់ហាង: ពូសានលក់សាច់កាប់</h4>
+          <p class="fs-5">តម្លៃសរុប : 20 $</p>
         </div>
       </div>
     </div>
   </div>
-   <script src="../assets/script/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        // Load the latest order from localStorage
-        const orders = JSON.parse(localStorage.getItem('orders')) || [];
-        const latestOrder = orders[orders.length - 1];
+  <!-- model detail -->
+
+  <div class="modal fade" id="modal-detail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content rounded-4">
+          <div class="modal-body rounded-4">
+
+              <div class="card border-0 rounded-4">
+                  <div class="card-body p-4 reciptBooking rounded-4">
+
+                      <div class="d-flex justify-content-between align-items-center pb-3">
+                          <h1 class="modal-title fs-4 fw-bold" id="staticBackdropLabel">វិក្កយបត្រ</h1>
+                          <button type="button"  class="btn-close shadow-none" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                      </div>
+                      <div class="row g-3">
+                          <div
+                              class="col-12 col-sm-6  d-flex flex-column gap-2 justify-content-center justify-content-md-start">
+                              <h1 class="mb-0 fs-5 fw-semibold text-form">អាសយដ្ឋានផ្សារ</h1>
+                              <p class="mb-0 fw-semibold">ST 606, Takmao, Phnom Penh</p>
+                              <p class="mb-0 fw-semibold text-form">លេខវិក័យប័ត្រ: #
+                                Nak123</p>
+                          </div>
+                          <div
+                              class="col-6 col-sm-6 d-flex flex-column gap-2 justify-content-center justify-content-md-start">
+                              <h1 class="mb-0 fs-5 fw-semibold text-form">តូបអ្នកលក់</h1>
+                              <p class="mb-0 fw-semibold">13</p>
+                              <p class="mb-0 fw-semibold text-form">លេខទូរសព្ទ័ : 0886098255</p>
+                          </div>
+                          <div class="col-12">
+                              <div class="table-responsive">
+                                  <table class="table tbl-cart mb-0">
+                                      <thead>
+                                          <tr>
+                                              <th>#</th>
+                                              <th>ផលិតផល</th>
+                                              <th>តម្លៃ</th>
+                                              <th>ចំនួន</th>
+                                              <th>តម្លៃសរុប</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr class="align-middle" v-for="item in orderStore?.orderDetail?.items"
+                                              :key="item.id">
+                                              <td>1</td>
+                                              <td class="d-flex align-items-center justify-content-center gap-2">
+                                                  <!-- <img :src="item.product.image" alt="" class="tbl-img-product"> -->
+                                                  <div class="d-flex flex-column gap-1">
+                                                      <p class="mb-0 fs-6 title-product"> ក្រូចចិន
+                                                      </p>
+                                                  </div>
+                                              </td>
+                                              <td>
+                                                10$
+                                              </td>
+                                              <td>
+                                                6
+                                              </td>
+                                              <td>
+                                                  28$
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                          <div class="border-dotted"></div>
+                          <div class="col-12 d-flex justify-content-end gap-5">
+                              <div class="d-flex flex-column gap-2">
+                                  <p class=" mb-0">សរុប</p>
+                                  <p class="mb-0">ថ្លៃដឹកជញ្ជូន</p>
+                                  <p class="-0">បញ្ចុះតម្លៃ</p>
+                              </div>
+                              <div class="d-flex flex-column gap-2">
+                                  <p class="mb-0">200$</p>
+                                  <p class="mb-0">2$</p>
+                                  <p class="mb-0">0$</p>
+                              </div>
+                          </div>
+                          <div class="border-dotted w-25 ms-auto"></div>
+                          <div class="col-12 d-flex gap-5 align-items-center justify-content-end">
+                              លុយដែលបង់សរុប :200$ <span class="text-primary fw-semibold">
+                                <button class="btn btn-primary"  id="back-home-btn">Back Home</button>  
+                          </div>
+                       
+                      </div>
+                  </div>
+                
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-cart-items">
+                    <p class="text-center">Your cart is empty</p>
+                </div>
+           
+            </div>
+            <div class="modal-footer">
+              <div class="modal-price w-100">
+                <div class="cart-totals mt-4  mb-3">
+                  <div class="d-flex justify-content-between mb-2">
+                      <span>Subtotal:</span>
+                      <span>$<span id="modal-cart-subtotal">0.00</span></span>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                      <span>Shipping:</span>
+                      <span>$0.00</span>
+                  </div>
+                  <div class="d-flex justify-content-between fw-bold fs-5">
+                      <span>Total:</span>
+                      <span>$<span id="modal-cart-total">0.00</span></span>
+                  </div>
+              </div>
+              <div class="w-100 gap-3 d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Continue Shopping</button>
+                <a href="../Shop/checkout.html" type="button" class="btn btn-primary" >Proceed to Checkout</a>
+              </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../assets/script/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function() {
+      const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+  
+      // Load cart from localStorage
+      function loadCart() {
+          return JSON.parse(localStorage.getItem('shoppingCart')) || [];
+      }
+  
+      // Update modal cart display
+      function updateModalCart() {
+          const cartItems = loadCart();
+          const $modalContainer = $('#modal-cart-items');
+          let subtotal = 0;
+          
+          $modalContainer.empty();
+          
+          if (cartItems.length === 0) {
+              $modalContainer.append('<p class="text-center">Your cart is empty</p>');
+          } else {
+              cartItems.forEach(item => {
+                  const itemTotal = item.price * item.quantity;
+                  subtotal += itemTotal;
+                  
+                  $modalContainer.append(`
+                      <div class="card mb-3">
+                          <div class="card-body">
+                              <div class="d-flex">
+                                  <img src="${item.image}" alt="${item.name}" class="order-item-img me-3">
+                                  <div class="flex-grow-1">
+                                      <h5>${item.name}</h5>
+                                      <div class="d-flex justify-content-between">
+                                          <span>$${item.price.toFixed(2)} x ${item.quantity}</span>
+                                          <strong>$${itemTotal.toFixed(2)}</strong>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  `);
+              });
+          }
+          
+          $('#modal-cart-subtotal').text(subtotal.toFixed(2));
+          $('#modal-cart-total').text(subtotal.toFixed(2));
+      }
+  
+      // Handle cart icon click
+      $('#cart-icon').click(function(e) {
+          e.preventDefault();
+          updateModalCart();
+          cartModal.show();
+      });
+  
+      // Load order details
+      const orders = JSON.parse(localStorage.getItem('orders')) || [];
+      const latestOrder = orders[orders.length - 1];
+      
+      if (latestOrder) {
+          displayOrderItems(latestOrder.items);
+          calculateOrderTotal(latestOrder.items);
+      }
+  
+      function displayOrderItems(items) {
+          const $container = $('#order-items-container');
+          $container.empty();
+          
+          if (items.length === 0) {
+              $container.append('<p>No items in this order</p>');
+              return;
+          }
+          
+          items.forEach(item => {
+              const itemTotal = item.price * item.quantity;
+              $container.append(`
+                  <div class="card mb-3">
+                      <div class="card-body">
+                          <div class="d-flex">
+                              <img src="${item.image}" alt="${item.name}" class="order-item-img me-3">
+                              <div class="flex-grow-1">
+                                  <h5>${item.name}</h5>
+                                  <div class="d-flex justify-content-between">
+                                      <span>$${item.price.toFixed(2)} x ${item.quantity}</span>
+                                      <strong>$${itemTotal.toFixed(2)}</strong>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              `);
+          });
+      }
+  
+      function calculateOrderTotal(items) {
+          let subtotal = 0;
+          items.forEach(item => {
+              subtotal += item.price * item.quantity;
+          });
+          
+          $('#order-subtotal').text(subtotal.toFixed(2));
+          $('#order-total').text(subtotal.toFixed(2));
+      }
+  
+      // Add date/time to invoice modal
+      $('#modal-detail').on('show.bs.modal', function () {
+          const now = new Date();
+          
+          // Format options for Khmer locale
+          const options = { 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric',
+              hour: '2-digit', 
+              minute: '2-digit',
+              second: '2-digit',
+              hour12: true 
+          };
+          
+          // Format the date/time in Khmer
+          const formattedDateTime = now.toLocaleDateString('km-KH', options);
+          
+          // Update the element
+          $('#invoice-date-time').text(formattedDateTime);
+      });
+  
+      // When clicking the close button on the QR modal to open the detail modal
+      $('#staticBackdrop .btn-close').click(function() {
+          $('#modal-detail').modal('show');
+      });
+  
+      // Clear cart and redirect when Back Home button is clicked
+      $('#back-home-btn').click(function() {
+          // Clear the cart from localStorage
+          localStorage.removeItem('shoppingCart');
+          localStorage.removeItem('orders');
+          
         
-        if (latestOrder) {
-            displayOrderItems(latestOrder.items);
-            calculateOrderTotal(latestOrder.items);
-        }
-
-        // Handle form submission
-        $('#customer-info-form').submit(function(e) {
-            e.preventDefault();
-            
-            // Save customer info with the order
-            if (orders.length > 0) {
-                orders[orders.length - 1].customer = {
-                    name: $('#name').val(),
-                    phone: $('#phone').val(),
-                    address: $('#address').val()
-                };
-                localStorage.setItem('orders', JSON.stringify(orders));
-                
-                // Clear the cart
-                localStorage.removeItem('shoppingCart');
-                
-                // Redirect to thank you page or show confirmation
-                alert('Order placed successfully! Thank you for your purchase.');
-                window.location.href = 'index.html';
-            }
-        });
-
-        function displayOrderItems(items) {
-            const $container = $('#order-items-container');
-            $container.empty();
-            
-            if (items.length === 0) {
-                $container.append('<p>No items in this order</p>');
-                return;
-            }
-            
-            items.forEach(item => {
-                const itemTotal = item.price * item.quantity;
-                $container.append(`
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <img src="${item.image}" alt="${item.name}" class="order-item-img me-3">
-                                <div class="flex-grow-1">
-                                    <h5>${item.name}</h5>
-                                    <div class="d-flex justify-content-between">
-                                        <span>$${item.price.toFixed(2)} x ${item.quantity}</span>
-                                        <strong>$${itemTotal.toFixed(2)}</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `);
-            });
-        }
-
-        function calculateOrderTotal(items) {
-            let subtotal = 0;
-            items.forEach(item => {
-                subtotal += item.price * item.quantity;
-            });
-            
-            $('#order-subtotal').text(subtotal.toFixed(2));
-            $('#order-total').text(subtotal.toFixed(2));
-        }
-    });
-    </script>
+          
+          // Redirect to home page (change the URL as needed)
+          window.location.href = '../index.html'; 
+      });
+  });
+  </script>
 </body>
 </html>

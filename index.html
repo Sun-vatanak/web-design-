@@ -1267,7 +1267,7 @@
                   </div>
                   <div class="w-100 gap-3 d-flex justify-content-end">
                     <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Continue Shopping</button>
-                    <button type="button" class="btn btn-primary" id="checkout-btn">Proceed to Checkout</button>
+                    <button id="checkout-btn" type="button" class="btn btn-primary" >Proceed to Checkout</button>
                   </div>
                  </div>
             </div>
@@ -1417,7 +1417,19 @@
         function saveCartToLocalStorage() {
             localStorage.setItem('shoppingCart', JSON.stringify(cart));
         }
+        $('#checkout-btn').click(function() {
+        // Save current cart as an order before redirecting
+        const orders = JSON.parse(localStorage.getItem('orders')) || [];
+        orders.push({
+            date: new Date().toISOString(),
+            items: [...cart],
+            total: parseFloat($('#cart-total').text())
+        });
+        localStorage.setItem('orders', JSON.stringify(orders));
         
+        // Redirect to checkout page
+        window.location.href = '../Shop/checkout.html';
+    });
         // Handle quantity changes in modal
         $('#modal-cart-items').on('click', '.minus', function() {
             const $cartItem = $(this).closest('.cart-item');
@@ -1456,11 +1468,7 @@
             showToast('Item removed from cart');
         });
         
-        // Checkout button handler
-        $('#checkout-btn').click(function() {
-            alert('Proceeding to checkout with ' + cart.reduce((total, item) => total + item.quantity, 0) + ' items');
-            // In a real app, you would redirect to a checkout page
-        });
+     
         
         // Cart icon click handler
         $('#cart-icon').click(function(e) {
