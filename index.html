@@ -113,88 +113,136 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
-           
-            <div class="d-flex align-items-center">
-                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="d-flex align-items-center">
+            <button
+              class="navbar-toggler me-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+              <img
+                class="logo img-fluid object-fit-cover"
+                src="../assets/logo/freepik-flat-colorful-fresh-market-shopping-cart-logo-20250506073114VWxQ.png"
+                alt="Logo"
+                style="width: 100px; height: 80px"
+              />
+            </a>
+          </div>
+
+          <div class="d-none d-lg-flex mx-4 flex-grow-1" style="width: 300px">
+            <div class="input-group border rounded-3">
+              <select
+                class="form-select bg-light"
+                style="
+                  max-width: 150px;
+                  border: 0px !important;
+                  background: #fff !important;
+                "
+              >
+                <option selected>All Category</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <span class="input-group-text bg-transparent border-0">|</span>
+              <input
+                type="text"
+                class="form-control border-0"
+                style="border: 0px !important; background: #fff !important"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-secondary border-0" type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="d-flex d-none d-lg-flex align-content-center justify-content-center flex-grow-1 fw-bold"
+          >
+            <ul
+              class="nav-link text-decoration-none d-flex gap-3 mt-3 align-items-center justify-content-center"
+            >
+              <li class="nav-item text-decoration-none d-block">
+                <a
+                  class="nav-link text-decoration-none d-block"
+                  href="../conatctus.html"
+                  >ទំនាក់ទំនង</a
+                >
+              </li>
+              <li class="nav-item text-decoration-none d-block">
+                <a class="nav-link " href="../aboutus.html"
+                  >អំពីយើង</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <a
+              class="btn btn-outline-primary border mx-1 d-none d-md-inline-flex"
+              href="#"
+            >
+              <i class="bi bi-chat-square-dots-fill"></i>
+            </a>
+
+            <div class="d-none d-lg-block ms-3 me-2">
+              <span class="fs-7 d-block">CALL US 24/7</span>
+              <a
+                href="tel:+85570809031"
+                class="fs-6 text-dark text-decoration-none"
+                >+855 - 70 80 90 31</a
+              >
+            </div>
+
+            <div class="btn d-flex ms-2 gap-2">
+              <a class="btn btn-outline-primary border" href="./auth/login.html">
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <a class="btn btn-outline-primary border" href="#">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+              <a
+                class="btn btn-outline-primary border position-relative"
+                id="cart-icon"
+                href="#"
+              >
+                <i class="bi bi-cart-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse mt-2" id="navbarContent">
+            <div class="d-lg-none">
+              <div class="input-group mb-3">
+                <select class="form-select border-0 bg-light">
+                  <option selected>All Category</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="bi bi-search"></i>
                 </button>
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo img-fluid object-fit-cover" src="../assets/logo/freepik-flat-colorful-fresh-market-shopping-cart-logo-20250506073114VWxQ.png"  alt="Logo" style="width: 100px; height: 80px;">
-                </a>
+              </div>
             </div>
-    
-           
-            <div class="d-none d-lg-flex mx-4 flex-grow-1" style="width: 300px;">
-                <div class="input-group border rounded-3">
-                    <select class="form-select  bg-light" style="max-width: 150px; border: 0px !important; background: #fff !important;">
-                        <option selected>All Category</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <span class="input-group-text bg-transparent border-0">|</span>
-                    <input type="text" class="form-control border-0" style="border: 0px !important; background: #fff !important;" placeholder="Search">
-                    <button class="btn btn-outline-secondary border-0" type="button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-            </div>
-            <div class=" d-flex  d-none d-lg-flex   align-content-center justify-content-center flex-grow-1 fw-bold">
-              <ul class="nav-link text-decoration-none d-flex gap-3  mt-3  align-items-center justify-content-center ">
-                <li class="nav-item  text-decoration-none d-block ">
-                  <a class="nav-link  text-decoration-none d-block " href="../conatctus.html">ទំនាក់ទំនង</a>
-                </li>
-                <li class="nav-item  text-decoration-none d-block">
-                  <a class="nav-link" href="#">អំពីយើង</a>
-                </li>
-              </ul>
-            </div>
-    
-            
-            <div class="d-flex align-items-center">
-                <a class="btn btn-outline-primary border mx-1 d-none d-md-inline-flex" href="#">
-                    <i class="bi bi-chat-square-dots-fill"></i>
-                </a>
-                
-                <div class="d-none d-lg-block ms-3 me-2">
-                    <span class="fs-7 d-block">CALL US 24/7</span>
-                    <a href="tel:+85570809031" class="fs-6 text-dark text-decoration-none">+855 - 70 80 90 31</a>
-                </div>
-               
-                <div class="btn d-flex ms-2 gap-2">
-                    <a class="btn btn-outline-primary border" href="#">
-                        <i class="bi bi-person-fill"></i>
-                    </a>
-                    <a class="btn btn-outline-primary border" href="#">
-                        <i class="bi bi-heart-fill"></i>
-                    </a>
-                    <a class="btn btn-outline-primary border position-relative" id="cart-icon" href="#">
-                        <i class="bi bi-cart-fill"></i>
-                    </a>
-                </div>
-            </div>
-    
-           
-            <div class="collapse navbar-collapse mt-2" id="navbarContent">
-                <div class="d-lg-none">
-                    <div class="input-group mb-3">
-                        <select class="form-select border-0 bg-light">
-                            <option selected>All Category</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <input type="text" class="form-control border-0" placeholder="Search">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
     <main>
       <section style="height: 500px" class="container hero mt-3">
         <div class="row g-3 w-100 h-100">
