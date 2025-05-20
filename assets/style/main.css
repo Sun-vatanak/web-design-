@@ -69,3 +69,7 @@ body{
 .mt-6 {
   margin-top: 100px !important;
 }
+.icon_market{
+  border-radius: 20px;
+  width: 100% !important;
+}
