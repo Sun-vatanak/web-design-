@@ -4,101 +4,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
   <link rel="stylesheet" href="../assets/style/main.css" />
+
+  <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
+  <title>Document</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link class="icon_market" href="/assets/logo/freepik-flat-colorful-fresh-market-shopping-cart-logo-20250506073114VWxQ.png" rel="icon"/>
     <!-- <title>ផ្សារអង្គរធំ</title> -->
   <title>បន្លែស្រស់ៗ</title>
+
 </head>
 
 <body>
   <main>
-    <header>
+     <header>
       <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
-
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
           <div class="d-flex align-items-center">
-            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              class="navbar-toggler me-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="../index.html">
-              <img class="logo img-fluid object-fit-cover"
+              <img
+                class="logo img-fluid object-fit-cover"
                 src="../assets/logo/freepik-flat-colorful-fresh-market-shopping-cart-logo-20250506073114VWxQ.png"
-                alt="Logo" style="width: 100px; height: 80px;">
+                alt="Logo"
+                style="width: 100px; height: 80px"
+              />
             </a>
           </div>
 
-
-          <div class="d-none d-lg-flex mx-4 flex-grow-1" style="width: 300px;">
+          <div class="d-none d-lg-flex mx-4 flex-grow-1" style="width: 300px">
             <div class="input-group border rounded-3">
-              <select class="form-select  bg-light"
-                style="max-width: 150px; border: 0px !important; background: #fff !important;">
+              <select
+                class="form-select bg-light"
+                style="
+                  max-width: 150px;
+                  border: 0px !important;
+                  background: #fff !important;
+                "
+              >
                 <option selected>All Category</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
               <span class="input-group-text bg-transparent border-0">|</span>
-              <input type="text" class="form-control border-0"
-                style="border: 0px !important; background: #fff !important;" placeholder="Search">
+              <input
+                type="text"
+                class="form-control border-0"
+                style="border: 0px !important; background: #fff !important"
+                placeholder="Search"
+              />
               <button class="btn btn-outline-secondary border-0" type="button">
                 <i class="bi bi-search"></i>
               </button>
             </div>
           </div>
-          <div class=" d-flex  d-none d-lg-flex   align-content-center justify-content-center flex-grow-1 fw-bold">
-            <ul class="nav-link text-decoration-none d-flex gap-3  mt-3  align-items-center justify-content-center ">
-              <li class="nav-item  text-decoration-none d-block ">
-                <a class="nav-link  text-decoration-none d-block text-primary" href="../conatctus.html">ទំនាក់ទំនង</a>
+          <div
+            class="d-flex d-none d-lg-flex align-content-center justify-content-center flex-grow-1 fw-bold"
+          >
+            <ul
+              class="nav-link text-decoration-none d-flex gap-3 mt-3 align-items-center justify-content-center"
+            >
+              <li class="nav-item text-decoration-none d-block">
+                <a
+                  class="nav-link text-decoration-none d-block"
+                  href="../conatctus.html"
+                  >ទំនាក់ទំនង</a
+                >
               </li>
-              <li class="nav-item  text-decoration-none d-block">
-                <a class="nav-link" href="./aboutus.html">អំពីយើង</a>
+              <li class="nav-item text-decoration-none d-block">
+                <a class="nav-link " href="../aboutus.html"
+                  >អំពីយើង</a
+                >
               </li>
             </ul>
           </div>
 
-
           <div class="d-flex align-items-center">
-            <a class="btn btn-outline-primary border mx-1 d-none d-md-inline-flex" href="#">
+            <a
+              class="btn btn-outline-primary border mx-1 d-none d-md-inline-flex"
+              href="#"
+            >
               <i class="bi bi-chat-square-dots-fill"></i>
             </a>
 
             <div class="d-none d-lg-block ms-3 me-2">
               <span class="fs-7 d-block">CALL US 24/7</span>
-              <a href="tel:+85570809031" class="fs-6 text-dark text-decoration-none">+855 - 70 80 90 31</a>
+              <a
+                href="tel:+85570809031"
+                class="fs-6 text-dark text-decoration-none"
+                >+855 - 70 80 90 31</a
+              >
             </div>
 
             <div class="btn d-flex ms-2 gap-2">
-              <a class="btn btn-outline-primary border" href="#">
+              <a class="btn btn-outline-primary border" href="../account/index.html">
                 <i class="bi bi-person-fill"></i>
               </a>
               <a class="btn btn-outline-primary border" href="../Shop/vat.html">
                 <i class="bi bi-heart-fill"></i>
-              </a>
-              <a class="btn btn-outline-primary border position-relative" id="cart-icon" href="#">
+            </a>
+              <a
+                class="btn btn-outline-primary border position-relative"
+                id="cart-icon"
+                href="#"
+              >
                 <i class="bi bi-cart-fill"></i>
               </a>
             </div>
           </div>
 
-
           <div class="collapse navbar-collapse mt-2" id="navbarContent">
-            <div class="d-lg-none">
-              <div class="input-group mb-3">
-                <select class="form-select border-0 bg-light">
+            <div class="d-lg-none align-items-center justify-content-center d-flex">
+               <div class="col-5">  <ul
+                class="nav-link text-decoration-none d-flex gap-3 mt-3 align-items-center justify-content-center"
+              >
+                <li class="nav-item text-decoration-none d-block">
+                  <a
+                    class="nav-link text-decoration-none fw-bold d-block"
+                    href="../conatctus.html"
+                    >ទំនាក់ទំនង</a
+                  >
+                </li>
+                <li class="nav-item text-decoration-none fw-bold d-block">
+                  <a class="nav-link " href="../aboutus.html"
+                    >អំពីយើង</a
+                  >
+                </li>
+              </ul></div>
+              <div class=" ol-7  rounded rounded-3 input-group  border border-1">
+                <select class="form-select border-0 bg-light" style="background-color: #fff !important;">
                   <option selected>All Category</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
-                <input type="text" class="form-control border-0" placeholder="Search">
-                <button class="btn btn-outline-secondary" type="button">
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-secondary border-0" type="button">
                   <i class="bi bi-search"></i>
                 </button>
               </div>
@@ -342,11 +401,50 @@
 
       </section>
     </footer>
+     <!-- Cart Modal -->
+       <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-cart-items">
+                        <p class="text-center">Your cart is empty</p>
+                    </div>
+               
+                </div>
+                <div class="modal-footer">
+                  <div class="modal-price w-100">
+                    <div class="cart-totals mt-4  mb-3">
+                      <div class="d-flex justify-content-between mb-2">
+                          <span>Subtotal:</span>
+                          <span>$<span id="modal-cart-subtotal">0.00</span></span>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                          <span>Shipping:</span>
+                          <span>$0.00</span>
+                      </div>
+                      <div class="d-flex justify-content-between fw-bold fs-5">
+                          <span>Total:</span>
+                          <span>$<span id="modal-cart-total">0.00</span></span>
+                      </div>
+                  </div>
+                  <div class="w-100 gap-3 d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button id="checkout-btn" type="button" class="btn btn-primary" >Proceed to Checkout</button>
+                  </div>
+                 </div>
+            </div>
+        </div>
+    </div>
   </main>
 </body>
 
-<script src="./assets/script/bootstrap.bundle.min.js"></script>
+<script src="../assets/script/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   AOS.init();
   var swiper = new Swiper(".mySwiper", {
@@ -367,5 +465,6 @@
     },
   });
 </script>
+<script src="../assets/script/main.js"></script>
 
 </html>
