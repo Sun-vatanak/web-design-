@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<!-- link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
   <link rel="stylesheet" href="../assets/style/main.css" />
   <title>Login</title>
@@ -46,14 +47,47 @@
       flex-direction: column;
       width: 100%;
     }
+    .my-card{
+      width: 100%;
+      padding: 40px 40px !important;
+      background-color: #848484;
+    }
   </style>
 </head>
 
 <body>
   <div class="frame g-5 row p-3 rounded rounded-3 mt-6  bg-white">
     <div class="for-image d-flex justify-content-center align-items-center col-md-6">
-      <img src="../assets/img/board/tl.webp" width="300px" class="img-fluid" alt="image" />
+      <img src="../assets/img/board/tl.webp" class="img-fluid" alt="image" />
     </div>
+    <section class="section py-5 bg-danger-subtle">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-sm-12 col-lg-6">
+            <div class="my-card">
+              <div class="image">
+                <img class="img-fluid" src="../assets/img/board/tl.webp" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="my-card">
+              <h1 class="text-black fs-1 fw-bolder text-center">LogIn</h1>
+              <form action="" method="get">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Put Your Email" required />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Put Your Password" required />
+                <div class="justify-content-start d-flex align-content-center mt-2">
+                  <label for="remember-me" class="form-check-label">Remember me</label>
+                  <div class="form-check"><input type="checkbox" name="remember-me" id="remember-me" /></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="for-form col-md-6">
       <h1>Login</h1>
       <form action="/login" method="post">
